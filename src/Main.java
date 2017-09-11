@@ -2,38 +2,33 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-
+        System.out.println("Please put in two numbers");
         Scanner scanner = new Scanner(System.in);
         String input1 = scanner.nextLine();
+//        Scanner scanner = new Scanner(System.in);
         String input2 = scanner.nextLine();
 
-    System.out.println("Please put in two numbers");
+        System.out.println("Input1 is " + input1 + " and input2 is " + input2);
+
         double operand1 = Double.parseDouble(input1); //this is where the input comes from
         double operand2 = Double.parseDouble(input2); //this is where the input comes from
 
 
         double sum = operand1 + operand2;
-        double difference = operand1 - operand2;
-        double division = operand1 / operand2;
-        double multiplication = operand1 * operand2;
+        double diff = operand1 - operand2;
+        double div = operand1 / operand2;
+        double mult = operand1 * operand2;
         double remainder = operand1 % operand2;
 
-//    showResults("the sum is", sum, "the difference is", difference, "the division is",  division, "the multipllication is",
-//    multiplication, "the remainder is", remainder);
-
-        showResults(sum, difference, division, multiplication, remainder);
-
-
-
+        showResult(sum, diff, div, mult, remainder);
 
     }
 
-    public static void showResults( double sum, double difference, double division, double multiplication, double remainder){
-        System.out.printf("the sum is", sum);
-        System.out.printf("the difference is", difference);
-        System.out.printf("the division is", division);
-        System.out.printf("the multiplication is", multiplication);
-        System.out.printf("the remainder is", remainder);
-
+    private static void showResult(double sum, double diff, double div, double mult, double remainder){
+        System.out.println("the sum is" + sum);
+        System.out.println("the difference is " + diff);
+        System.out.println("the two numbers divided are " + div);
+        System.out.println("the quotient is" + mult);
+        System.out.println("the reaminder is" + remainder);
     }
 }
