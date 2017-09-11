@@ -5,13 +5,11 @@ public class Main {
         System.out.println("Please put in two numbers");
         Scanner scanner = new Scanner(System.in);
         String input1 = scanner.nextLine();
-//        Scanner scanner = new Scanner(System.in);
         String input2 = scanner.nextLine();
 
-        System.out.println("Input1 is " + input1 + " and input2 is " + input2);
 
-        double operand1 = Double.parseDouble(input1); //this is where the input comes from
-        double operand2 = Double.parseDouble(input2); //this is where the input comes from
+        double operand1 = Double.parseDouble(input1); 
+        double operand2 = Double.parseDouble(input2); 
 
 
         double sum = operand1 + operand2;
